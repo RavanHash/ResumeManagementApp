@@ -7,6 +7,8 @@ using ResumeManagement.API.Core.Entities;
 
 namespace ResumeManagement.API.Controllers;
 
+[Route("api/[controller]")]
+[ApiController]
 public class JobController : ControllerBase
 {
     public JobController(ApplicationDbContext context, IMapper mapper)
