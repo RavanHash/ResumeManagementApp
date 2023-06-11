@@ -1,6 +1,6 @@
 @import "../../mixins";
 
-.companies {
+.jobs {
   .heading {
     @include d-flex(row, space-between, center);
     width: 100%;
@@ -18,7 +18,7 @@
   border-color: #009dff;
   margin-left: 5px;
 }
-.add-company {
+.add-job {
   width: 500px;
   max-width: 100%;
   @include d-flex(column, flex-start, center);
