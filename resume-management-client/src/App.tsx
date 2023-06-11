@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import CustomLinearProgress from "./componetns/custom-linear-progress/CustomLinearProgress.component";
 
 const Home = lazy(() => import("./pages/home/Home.page"));
+const Companies = lazy(() => import("./pages/companies/Companies.page"));
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
@@ -18,6 +19,9 @@ function App() {
         <Suspense fallback={<CustomLinearProgress />}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/companies">
+              <Route index element={<Companies />} />
+            </Route>
           </Routes>
         </Suspense>
       </div>
