@@ -6,6 +6,7 @@ import CustomLinearProgress from "./componetns/custom-linear-progress/CustomLine
 
 const Home = lazy(() => import("./pages/home/Home.page"));
 const Companies = lazy(() => import("./pages/companies/Companies.page"));
+const AddCompany = lazy(() => import("./pages/companies/AddCompany.page"));
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/companies">
               <Route index element={<Companies />} />
+              <Route path="add" element={<AddCompany />} />
             </Route>
           </Routes>
         </Suspense>

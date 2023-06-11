@@ -6,9 +6,19 @@
     width: 100%;
   }
 }
-.addButton{
+.add-button{
   color: #009dff;
   border-color: #009dff;
+}
+.back-button{
+  border-color: #d200e1;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.save-button{
+  border-color: #0080ff;
+  border-radius: 15px;
+  margin-left: 5px;
 }
 .add-company {
   width: 500px;

@@ -31,7 +31,7 @@ const Companies = () => {
     <div className="content companies">
       <div className="heading">
         <h2>Companies</h2>
-        <Button className="addButton" variant="outlined" onClick={() => redirect("/companies/add")}>
+        <Button className="add-button" variant="outlined" onClick={() => redirect("/companies/add")}>
           <Add />
         </Button>
       </div>
