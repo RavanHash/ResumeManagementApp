@@ -5,7 +5,7 @@ import { ICompany } from "../../types/global.typing";
 import { Button, CircularProgress } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import CompaniesGrid from "../../componetns/companies/CompaniesGrid.component";
+import CompaniesGrid from "../../components/companies/CompaniesGrid.component";
 
 const Companies = () => {
   const [companies, setCompanies] = useState<ICompany[]>([]);
