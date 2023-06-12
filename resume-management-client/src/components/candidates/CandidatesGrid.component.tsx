@@ -13,7 +13,7 @@ const column: GridColDef[] = [
   { field: "lastName", headerName: "Last Name", width: 120 },
   { field: "email", headerName: "Email", width: 150 },
   { field: "phone", headerName: "Phone", width: 150 },
-  { field: "coverLetter", headerName: "About", width: 500 },
+  { field: "coverLetter", headerName: "CV", width: 500 },
 
   {
     field: "resumeUrl",
@@ -36,7 +36,7 @@ interface ICandidatesGridProps {
 
 const CandidatesGrid = ({ data }: ICandidatesGridProps) => {
   return (
-    <Box sx={{ width: "100%", height: 450 }} className="jobs-grid">
+    <Box sx={{ width: "100%", height: 450 }} className="candidates-grid">
       <DataGrid
         rows={data}
         columns={column}

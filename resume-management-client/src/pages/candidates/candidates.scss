@@ -6,6 +6,18 @@
     width: 100%;
   }
 }
+.add-button {
+  color: #009dff;
+  border-color: #009dff;
+}
+.back-button {
+  border-color: #d200e1;
+  margin-right: 5px;
+}
+.save-button {
+  border-color: #009dff;
+  margin-left: 5px;
+}
 .add-candidate {
   width: 500px;
   max-width: 100%;
@@ -15,4 +27,23 @@
   * {
     color: var(--text-color1);
   }
+}
+.file-input {
+  display: inline-block;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #0091ef;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.file-input:hover {
+  background-color: #0084c7;
+}
+.file-input:focus {
+  outline: none;
+}
+.file-input::file-selector-button {
+  display: none;
 }
